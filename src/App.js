@@ -34,7 +34,7 @@ function App() {
         />
       </div>
       {citynotfound === 404 ? (
-        <h1 className="errorMessage">City Not Found!</h1>
+        <h1 className="errorMessage">Location Not Found!</h1>
       ) : (
         <div className="container">
           <div className="top">
