@@ -107,4 +107,12 @@ h1 {
   .mobileview {
     font-size: smaller;
   }
+  .input input {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+  .searchbtn {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
 }
