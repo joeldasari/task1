@@ -22,6 +22,19 @@ function App() {
       setLocation("");
     }
   };
+
+  const inputLocationbtn = () => {
+    Axios.get(url)
+      .then((res) => {
+        setCityNotFound(res.status);
+        setData(res.data);
+      })
+      .catch((e) => {
+        setCityNotFound(e.response.status);
+      });
+    setLocation("");
+  };
+
   return (
     <div className="app">
       <div className="input">
@@ -32,6 +45,9 @@ function App() {
           placeholder="Enter Location"
           type="text"
         />
+        <button className="searchbtn" onClick={inputLocationbtn}>
+          Search
+        </button>
       </div>
       {citynotfound === 404 ? (
         <h1 className="errorMessage">Location Not Found!</h1>

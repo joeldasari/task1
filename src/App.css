@@ -79,8 +79,27 @@ h1 {
   outline: none;
 }
 
+.input input :hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
 ::placeholder {
   color: #f8f8f8;
+}
+
+.searchbtn {
+  border: 2px solid #000;
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-left: 10px;
+  padding: 11px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.searchbtn:hover {
+  background-color: #000;
 }
 
 .errorMessage {
