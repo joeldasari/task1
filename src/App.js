@@ -63,19 +63,19 @@ function App() {
                       {Math.floor(data.main.feels_like - 273.15)} °C
                     </p>
                   ) : null}
-                  <p>Feels Like</p>
+                  <p className="mobileview">Feels Like</p>
                 </div>
                 <div className="humidity">
                   {data.main ? (
                     <p className="bold">{data.main.humidity}%</p>
                   ) : null}
-                  <p>Humidity</p>
+                  <p className="mobileview">Humidity</p>
                 </div>
                 <div className="wind">
                   {data.wind ? (
                     <p className="bold">{data.wind.speed.toFixed()} MPH</p>
                   ) : null}
-                  <p>Wind Speed</p>
+                  <p className="mobileview">Wind Speed</p>
                 </div>
               </div>
             </div>

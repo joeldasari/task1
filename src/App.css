@@ -87,3 +87,9 @@ h1 {
   text-align: center;
   font-size: 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .mobileview {
+    font-size: smaller;
+  }
+}
