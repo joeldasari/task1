@@ -119,3 +119,15 @@ h1 {
     background-position: -150px;
   }
 }
+
+@media only screen and (min-width: 700px) {
+  .app {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-height: 700px) {
+  .top {
+    padding-bottom: 300px;
+  }
+}
